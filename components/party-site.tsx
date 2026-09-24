@@ -48,6 +48,9 @@ export function PartySite() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#fffaf5] text-[#3d3145]">
       <header className={`fixed inset-x-0 top-0 z-40 border-b border-[#3d3145]/10 bg-[#fffaf5]/90 backdrop-blur-md transition-shadow duration-500 ${scrolled ? 'shadow-lg shadow-[#3d3145]/5' : ''}`}>
+        <div className="bg-[#e85d7b]/10 px-5 py-2.5 text-center text-sm font-medium text-[#3d3145]">
+          {t.header.banner}
+        </div>
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-10">
           <a href="#top" aria-label="Dona Li Party" className="flex items-center"><Image src={logoImage} alt="Dona Li Party Decorações" width={92} height={92} className="size-14 object-contain sm:size-16" /></a>
           <nav className="hidden items-center gap-7 text-sm font-medium lg:flex">
